@@ -1,6 +1,6 @@
 # friendly-happiness
 
-@RequestMapping(value="izvestaj", method=RequestMethod.GET)
+     @RequestMapping(value="izvestaj", method=RequestMethod.GET)
 	public void izvestaj(HttpServletResponse response, int idI) throws Exception{
 		Izvodjenje i = ir.getOne(idI);
 		List<Karta> sve = i.getKartas();
